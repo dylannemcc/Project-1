@@ -1,0 +1,214 @@
+// Variables
+$primary-color: #ff0000;
+$secondary-color: #f7b500;
+$grey-light: #f0f0f0;
+$grey-dark: #333333;
+$white: #ffffff;
+
+// General Styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// Navbar and Hero Section (Now matching the form section background)
+.navbar, .hero-section {
+
+    background-color: #A59D8D;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 33px;      // Updated font size
+        font-family: 'Sonsie One', cursive;  // Updated font family
+        font-weight: 400;     // Updated font weight
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 20px;
+
+            .nav-link {
+                font-family: 'Sonsie One', cursive;  // Updated font family
+                font-size: 33px;     // Updated font size
+                font-weight: 400;    // Updated font weight
+                font-style: italic;
+                text-decoration: none;
+                color: $grey-dark;
+            }
+        }
+    }
+}
+
+
+
+.hero-section {
+    background-color: #38323D;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero-text {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            color: $white;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: $white;
+        }
+    }
+}
+
+// Contact Information Section
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: $grey-light;
+
+    .info-card {
+        text-align: center;
+        padding: 20px;
+        background-color: #FDD158;
+        border-radius: 8px;
+        width: 25%;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+// Contact Form Section
+.contact-section {
+    background-color: #A59D8D;
+    padding: 40px 0;
+    text-align: center;
+
+    .contact-form {
+        background-color: #38323D;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        margin: 0 auto;
+
+        .form-heading {
+            color: #C34127;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            label {
+                width: 100px;
+                color: #C34127;
+                font-size: 16px;
+            }
+
+            input {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: $white;
+            }
+        }
+
+        button {
+            background-color: #FDD158;
+            color: #38323D;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+// Social Media Section
+.social-media {
+    text-align: center;
+    padding: 40px 0;
+    background-color: $grey-light;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 0 10px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    background-color: #38323D;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+
+    .footer-address {
+        margin-top: 20px;
+    }
+}

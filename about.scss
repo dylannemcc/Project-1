@@ -1,0 +1,230 @@
+// Variables
+$primary-color: #ff0000;
+$secondary-color: #f7b500;
+$grey-light: #f0f0f0;
+$grey-dark: #333333;
+$white: #ffffff;
+
+// General Styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// Navbar
+.navbar {
+    background-color: #A59D8D;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 33px;      // Updated font size
+        font-family: 'Sonsie One', cursive;  // Updated font family
+        font-weight: 400;     // Updated font weight
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 20px;
+
+            .nav-link {
+                font-family: 'Sonsie One', cursive;  // Updated font family
+                font-size: 33px;     // Updated font size
+                font-weight: 400;    // Updated font weight
+                font-style: italic;
+                text-decoration: none;
+                color: $grey-dark;
+            }
+        }
+    }
+}
+
+
+
+// Our Work Section
+.Our-Owner {
+    margin: 40px 0;
+
+    .section-heading {
+        font-weight: bold;
+        font-style: italic;
+        background-color: #C34127;
+        color: $grey-dark;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+// Card Styles for Owner Section
+.card {
+    margin: 20px; // Margin around the card
+    padding: 20px; // Padding inside the card
+    border: 5px solid $secondary-color; // Thick yellow border
+    border-radius: 8px; // Optional: round the corners
+    text-align: center; // Center align content inside the card
+    background-color: $white; // Background color of the card
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Light shadow for card
+
+    .owner-image {
+        width: 250px; // Set fixed width for image
+        height: auto; // Maintain aspect ratio
+        border-radius: 50%; // Make the image round
+        margin-bottom: 20px; // Space below the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Light shadow for image
+    }
+
+    .card-title {
+        font-size: 24px; // Size for the owner's name
+        color: $primary-color; // Red color for the title
+        margin-bottom: 10px; // Space below the title
+        font-weight: bold; // Make the name bold
+    }
+
+    .card-description {
+        font-size: 16px; // Font size for description
+        color: $grey-dark; // Dark grey color for text
+        margin-bottom: 10px; // Space between descriptions
+        line-height: 1.6; // Increase line height for readability
+    }
+}
+
+// Additional styling for the P6 card
+.About-P6 {
+    margin: 40px 0; // Space between sections
+
+    .p6-image {
+        width: 250px; // Set fixed width for P6 image
+        height: auto; // Maintain aspect ratio
+        border-radius: 50%; // Make the image round
+        margin-bottom: 20px; // Space below the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Light shadow for image
+    }
+
+    .section-heading {
+        font-weight: bold;
+        font-style: italic;
+        background-color: #C34127; // Background color of the heading
+        color: $grey-dark; // Text color for heading
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+// Footer
+.footer {
+    background-color: #38323D;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-logo {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+
+    .footer-address {
+        margin-top: 20px;
+    }
+}
+/// Appointment Section Styles
+.appointment-section {
+    background-color: #A59D8D; // Background color of the section
+    padding: 40px 0; // Padding around the section
+    text-align: center; // Center the heading and form
+
+    .appointment-form {
+        background-color: #38323D; // Form background color
+        padding: 20px; // Padding inside the form
+        border-radius: 8px; // Optional: round corners
+        width: 400px; // Fixed width for the form
+        margin: 0 auto; // Center the form
+
+        .form-heading {
+            color: #C34127; // Heading color
+            font-size: 24px; // Heading size
+            margin-bottom: 20px; // Space below heading
+        }
+
+        label {
+            display: block; // Block display to make labels occupy full width
+            text-align: left; // Align labels to the left
+            color: #C34127; // Heading color
+          
+            padding: 5px; // Padding inside the label
+            margin-bottom: 5px; // Space below labels
+            border-radius: 4px; // Optional: round corners
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px); // Full width minus padding for equal space
+            padding: 10px; // Padding inside text boxes
+            margin-bottom: 20px; // Space below text boxes
+            border: none; // Remove border
+            border-radius: 4px; // Round corners
+            background-color: $white; // White background for text boxes
+            box-sizing: border-box; // Include padding in width calculation
+        }
+
+        button {
+            background-color: #FDD158; // Button color
+            color: #38323D; // Button text color
+            padding: 10px 20px; // Padding inside button
+            border: none; // Remove border
+            border-radius: 4px; // Round corners
+            cursor: pointer; // Pointer cursor on hover
+
+            &:hover {
+                opacity: 0.9; // Slightly fade button on hover
+            }
+        }
+    }
+}
+.footer {
+    background-color: #38323D;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-logo {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+
+    .footer-address {
+        margin-top: 20px;
+    }
+}

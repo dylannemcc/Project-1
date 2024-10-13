@@ -1,0 +1,221 @@
+// Variables
+$primary-color: #ff0000;
+$secondary-color: #f7b500;
+$grey-light: #f0f0f0;
+$grey-dark: #333333;
+$white: #ffffff;
+
+// General Styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// Navbar
+.navbar {
+    background-color: #A59D8D;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 33px;      // Updated font size
+        font-family: 'Sonsie One', cursive;  // Updated font family
+        font-weight: 400;     // Updated font weight
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 20px;
+
+            .nav-link {
+                font-family: 'Sonsie One', cursive;  // Updated font family
+                font-size: 33px;     // Updated font size
+                font-weight: 400;    // Updated font weight
+                font-style: italic;
+                text-decoration: none;
+                color: $grey-dark;
+            }
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    .hero-image {
+        width: 100%;
+        height: 586px;
+        object-fit: cover;
+    }
+}
+
+// Recent Repairs Section
+.recent-repairs {
+    margin: 40px 0;
+
+    .section-heading {
+        font-weight: bold;
+        font-style: italic;
+        background-color: #C34127;
+        color: $grey-dark;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card {
+            background-color: #38323D;
+            width: 20%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .card-image {
+                width: 100%;
+                height: 200px; // Fixed height for all images
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; // Ensures images fill the card without distortion
+                }
+            }
+
+            .card-content {
+                padding: 10px;
+                background-color: #38323D;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card-title {
+                    color: $primary-color;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .card-btn {
+                    background-color: $secondary-color;
+                    color: $white;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%; // Full width of the card
+                    text-align: center;
+                    border-radius: 4px;
+                    transition: background-color 0.3s ease; // Smooth hover effect
+
+                    &:hover {
+                        background-color: adjust-color($secondary-color, $lightness: -10%); // Fixed function name
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    background-color: #38323D;
+    
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-logo {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+
+    .footer-address {
+        margin-top: 20px;
+    }
+}
+
+// Client Reviews Section
+.client-reviews {
+    margin: 40px 0;
+
+    .review-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .review-card {
+        background-color: #A59D8D;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+
+        .client-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .client-name {
+            font-weight: bold;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .client-rating {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .client-review {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    }
+
+    .review-btn {
+        background-color: $secondary-color;
+        color: $white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+            background-color: adjust-color($secondary-color, $lightness: -10%); // Fixed function name
+        }
+    }
+}

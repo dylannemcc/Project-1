@@ -1,0 +1,151 @@
+// Variables
+$primary-color: #ff0000;
+$secondary-color: #f7b500;
+$grey-light: #f0f0f0;
+$grey-dark: #333333;
+$white: #ffffff;
+
+// Footer
+.footer {
+    background-color: #38323D;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-logo {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+    }
+
+    .footer-address {
+        margin-top: 20px;
+    }
+}
+
+// Recent Repairs Section
+.recent-repairs {
+    margin: 40px 0;
+
+    .section-heading {
+        font-weight: bold;
+        font-style: italic;
+        background-color: #C34127;
+        color: $grey-dark;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card {
+            background-color: #38323D;
+            width: 20%;
+            margin-bottom: 20px;
+
+            .card-image {
+                width: 100%;
+                height: 200px; // Set a fixed height for all images
+                overflow: hidden; // Ensure the image doesn’t overflow the container
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; // Makes sure the image fits within the container and maintains its aspect ratio
+                }
+            }
+
+            .card-content {
+                padding: 10px;
+                background-color: $grey-light;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card-title {
+                    color: $primary-color;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .card-btn {
+                    background-color: $secondary-color;
+                    color: $white;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%; // Optional: Make button full-width
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// Navbar
+.navbar {
+    background-color: #A59D8D;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 33px;      // Updated font size
+        font-family: 'Sonsie One', cursive;  // Updated font family
+        font-weight: 400;     // Updated font weight
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 20px;
+
+            .nav-link {
+                font-family: 'Sonsie One', cursive;  // Updated font family
+                font-size: 33px;     // Updated font size
+                font-weight: 400;    // Updated font weight
+                font-style: italic;
+                text-decoration: none;
+                color: $grey-dark;
+            }
+        }
+    }
+}
+
+
+// Search Box Styles
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    .search-box {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid $grey-dark;
+        border-radius: 4px;
+        background-color: $white;
+        color: $grey-dark;
+
+        &::placeholder {
+            color: $grey-dark;
+        }
+    }
+}
